@@ -7,7 +7,8 @@ msg = '\r\n I love Computer Networks!'
 endmsg = '\r\n.\r\n'
 
 # Choose a mail server (e.g. Google mail server) and call it mailserver
-mailserver = ("127.0.0.1", 1025)
+# mailserver = ("127.0.0.1", 1025) Uncomment this to run it with sendria
+mailserver = ("172.17.0.1", 1025)
 
 # Create socket called clientSocket and establish a TCP connection with mailserver
 clientSocket = socket(AF_INET, SOCK_STREAM)
